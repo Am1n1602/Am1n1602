@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hey, I am Aman currently studying at IIT BHU, Varanasi. Trying my best to learn new things everyday!
+Hey, I am Aman Gautam currently studying at IIT BHU, Varanasi. Trying my best to learn new things everyday!
 
 
 # 💻 Tech Stack:
