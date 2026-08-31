@@ -1,8 +1,8 @@
 <h1 align="center">Hi there, I'm Aman Gautam 👋</h1>
-<h3 align="center">Game dev tinkerer • Systems programmer • Student at IIT (BHU), Varanasi</h3>
+<h3 align="center">Systems programmer • Student at IIT (BHU), Varanasi</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00ADB5&center=true&vCenter=true&width=500&lines=Building+2D+games+with+Raylib+%2B+C%2B%2B;Exploring+low-level+systems+%26+OpenGL;IIT+BHU+%E2%80%94+learning+something+new+daily;Currently+shipping%3A+another+small+game" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00ADB5&center=true&vCenter=true&width=500&lines=C%2B%2B%2C+systems+%26+a+bit+of+Raylib;Currently+learning+data+analysis;Diving+into+deep+learning;IIT+BHU+%E2%80%94+learning+something+new+daily" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -13,12 +13,13 @@
 
 ### 💫 About Me
 
-Hey, I'm Aman — currently studying at **IIT (BHU), Varanasi**. Most of what I build starts as "let's see if I can make this move on screen" and turns into a small game or graphics experiment. Trying to learn something new every day, one repo at a time.
+Hey, I'm Aman — currently studying at **IIT (BHU), Varanasi**. Trying to learn something new every day, one repo at a time.
 
-- 🎮 I like building small 2D games and movement/physics prototypes with **Raylib**
 - 🧠 Comfortable across **C++, C, C#, Python, Kotlin**, and shell scripting
+- 🕹️ Have built a few small 2D games and physics prototypes with **Raylib**
 - 🖥️ Poking around **OpenGL** to understand what's happening under the hood
-- 🦈 Certified **Pull Shark** on GitHub
+- 📊 Currently learning **data analysis**
+- 🤖 Currently diving into **deep learning**
 - 🌱 Always tinkering with something new — check the pinned repos below
 
 ---
@@ -92,8 +93,6 @@ Hey, I'm Aman — currently studying at **IIT (BHU), Varanasi**. Most of what I 
 
 <p align="left">
   <a href="https://github.com/Am1n1602" target="_blank"><img src="https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white" /></a>
-   <a href="https://www.linkedin.com/in/am1n-gautam/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> 
-  <a href="mailto:amangautam1602@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a> 
+  <a href="https://www.linkedin.com/in/am1n-gautam/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> 
+   <a href="mailto:amangautam1602@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
-
-<p align="center"><i>"First, solve the problem. Then, write the code." — John Johnson</i></p>
