@@ -136,13 +136,16 @@ Machine learning, financial data analysis, RAG systems, and practical LLM applic
 
 ## 📊 GitHub
 
-[![GitHub Profile](https://img.shields.io/badge/GitHub-Am1n1602-181717?style=flat-square&logo=github)](https://github.com/Am1n1602)
-
 <p align="center">
   <img
-    src="./profile/top-langs.svg"
+    src="https://github-stats-extended.vercel.app/api?username=Am1n1602&show_icons=true&theme=radical&hide_border=true"
     height="170"
-    alt="Top Languages"
+    alt="Aman's GitHub Stats"
+  />
+  <img
+    src="https://github-stats-extended.vercel.app/api/top-langs/?username=Am1n1602&layout=compact&langs_count=8&theme=radical&hide_border=true"
+    height="170"
+    alt="Aman's Top Languages"
   />
 </p>
 
