@@ -1,98 +1,163 @@
-<h1 align="center">Hi there, I'm Aman Gautam 👋</h1>
-<h3 align="center">Systems programmer • Student at IIT (BHU), Varanasi</h3>
+# Hi, I'm Aman Gautam 👋
+
+### C++ Developer • ML/AI Enthusiast • IIT (BHU)
+
+I like building things and understanding how they work under the hood — from **C++ game systems and simulations** to **financial data pipelines, machine learning, and RAG-based applications**.
+
+* 🎓 Student at **IIT (BHU), Varanasi**
+* 💻 Strongest in **C++ and Python**
+* 🎮 Interested in **game development, graphics, physics, and systems programming**
+* 🤖 Exploring **machine learning, deep learning, and LLM applications**
+* 📊 Currently building software around **financial data and analysis**
+
+---
+
+## 🛠️ Tech Stack
+
+### Languages
+
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square\&logo=cplusplus\&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat-square\&logo=c\&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square\&logo=csharp\&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square\&logo=kotlin\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square\&logo=javascript\&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square\&logo=mysql\&logoColor=white)
+
+### Development
+
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square\&logo=linux\&logoColor=black)
+![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square\&logo=cmake\&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square\&logo=nodedotjs\&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square\&logo=express\&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square\&logo=mongodb\&logoColor=white)
+
+### Game Development
+
+![Raylib](https://img.shields.io/badge/Raylib-000000?style=flat-square)
+![Godot](https://img.shields.io/badge/Godot-478CBF?style=flat-square\&logo=godotengine\&logoColor=white)
+![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?style=flat-square\&logo=opengl\&logoColor=white)
+![SDL2](https://img.shields.io/badge/SDL2-000000?style=flat-square)
+
+### Data / ML / AI
+
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square\&logo=numpy\&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square\&logo=pandas\&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square\&logo=scikitlearn\&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square\&logo=pytorch\&logoColor=white)
+![LightGBM](https://img.shields.io/badge/LightGBM-9ACD32?style=flat-square)
+
+**AI / Finance:** `RAG` · `LLM Applications` · `XBRL` · `Financial Analysis` · `Vector Search`
+
+---
+
+## 🚀 Featured Projects
+
+### 📈 [Fin_QA](https://github.com/Am1n1602/Fin_QA)
+
+**Python • RAG • LLM • Financial Analysis**
+
+A financial question-answering system focused on Indian equities.
+
+* Deterministic financial ratio engine for company analysis
+* RAG pipeline for answering questions using financial information
+* Supports **NSE/BSE companies**
+* Exposed through **CLI, API, and dashboard**
+* Combines structured financial computation with LLM-based reasoning
+
+> Building toward a broader financial intelligence platform for fundamental analysis, financial QA, and automated research.
+
+---
+
+### 🎮 [Just-Another-World-Godot](https://github.com/Am1n1602/Just-Another-World-Godot)
+
+**Godot • GDScript • Game Development**
+
+A game-development project exploring the **Godot engine** and modern 2D game workflows.
+
+* Experimenting with gameplay systems and scene architecture
+* Working with Godot's node-based design
+* Exploring a development workflow beyond my C++ / Raylib projects
+
+---
+
+### 🕹️ [Just-another-easy-game](https://github.com/Am1n1602/Just-another-easy-game)
+
+**C++ • Raylib • Node.js • MongoDB**
+
+A 2D platformer built from scratch using Raylib.
+
+* Built in **C++ without a traditional game engine**
+* Includes player movement, physics, traps, level design and gameplay systems
+* Published as a playable browser game
+* Includes an online leaderboard backed by a Node.js server and MongoDB
+
+🎮 **[Play the game](https://peepow.itch.io/just-another-easy-game)**
+
+---
+
+### ⚛️ [ParticleCollision](https://github.com/Am1n1602/ParticleCollision)
+
+**C++ • Raylib • Physics Simulation**
+
+A real-time particle collision simulation built to explore **physics programming and interactive simulation**.
+
+* Particle interaction and collision handling
+* Real-time visualization with Raylib
+* Focused on understanding simulation and game-physics fundamentals
+
+---
+
+## 🔨 Currently Exploring
+
+```text
+Financial Data      → XBRL → JSON → Analysis → Financial QA
+AI / LLM            → RAG → Retrieval → Grounded Answers
+Machine Learning    → ML → Deep Learning → Applied AI
+Game Development    → Physics → Graphics → Engine Architecture
+Systems Programming → C++ → Performance → Low-level Concepts
+```
+
+---
+
+## 💡 What I Enjoy Building
+
+**Systems & Software Engineering**
+Backend systems, APIs, performance-oriented C++, and understanding software at a lower level.
+
+**Game Development**
+Graphics, physics, movement systems, simulations, and game-engine architecture.
+
+**AI & Data**
+Machine learning, financial data analysis, RAG systems, and practical LLM applications.
+
+---
+
+## 📊 GitHub
+
+[![GitHub Profile](https://img.shields.io/badge/GitHub-Am1n1602-181717?style=flat-square&logo=github)](https://github.com/Am1n1602)
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00ADB5&center=true&vCenter=true&width=500&lines=C%2B%2B%2C+systems+%26+a+bit+of+Raylib;Currently+learning+data+analysis;Diving+into+deep+learning;IIT+BHU+%E2%80%94+learning+something+new+daily" alt="Typing SVG" />
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Am1n1602&label=Profile%20Views&color=00ADB5&style=flat" alt="Profile Views" />
+  <img
+    src="./profile/top-langs.svg"
+    height="170"
+    alt="Top Languages"
+  />
 </p>
 
 ---
 
-### 💫 About Me
+## 🤝 Connect
 
-Hey, I'm Aman — currently studying at **IIT (BHU), Varanasi**. Trying to learn something new every day, one repo at a time.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aman%20Gautam-0A66C2?style=flat-square\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/am1n-gautam/)
+[![X](https://img.shields.io/badge/X-@Am1n1602-000000?style=flat-square\&logo=x\&logoColor=white)](https://x.com/Am1n1602)
+[![Itch.io](https://img.shields.io/badge/Itch.io-My%20Game-FA5C5C?style=flat-square\&logo=itchdotio\&logoColor=white)](https://peepow.itch.io/just-another-easy-game)
 
-- 🧠 Comfortable across **C++, C, C#, Python, Kotlin**, and shell scripting
-- 🕹️ Have built a few small 2D games and physics prototypes with **Raylib**
-- 🖥️ Poking around **OpenGL** to understand what's happening under the hood
-- 📊 Currently learning **data analysis**
-- 🤖 Currently diving into **deep learning**
-- 🌱 Always tinkering with something new — check the pinned repos below
+📧 **[amangautam1602@gmail.com](mailto:amangautam1602@gmail.com)**
 
 ---
-
-### 🛠️ Tech Stack
-
-<p align="left">
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" />
-  <img src="https://img.shields.io/badge/Bash_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-  <img src="https://img.shields.io/badge/RayLib-FFFFFF?style=for-the-badge&logo=raylib&logoColor=black" />
-  <img src="https://img.shields.io/badge/OpenGL-FFFFFF?style=for-the-badge&logo=opengl" />
-  <img src="https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white" />
-</p>
-
----
-
-### 🎮 Pinned Projects
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🕹️ <a href="https://github.com/Am1n1602/Just-another-easy-game">Just-another-easy-game</a></h4>
-      <p>A not-so-simple 2D game built using Raylib.</p>
-      <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
-    </td>
-    <td width="50%" valign="top">
-      <h4>🏃 <a href="https://github.com/Am1n1602/FP-Movement">FP-Movement</a></h4>
-      <p>First-person movement mechanics built with Raylib.</p>
-      <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🎯 <a href="https://github.com/Am1n1602/Bouncing-Ball">Bouncing-Ball</a></h4>
-      <p>A simple drag-and-shoot bouncing ball physics demo.</p>
-      <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
-    </td>
-    <td width="50%" valign="top">
-      <h4>✅ <a href="https://github.com/Am1n1602/TodoList">TodoList</a></h4>
-      <p>A simple TodoList app, built while learning Kotlin.</p>
-      <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" />
-    </td>
-  </tr>
-</table>
-
----
-
-### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Am1n1602&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Aman's GitHub Stats" width="48%" />
-  <img src="https://nirzak-streak-stats.vercel.app/?user=Am1n1602&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Am1n1602&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="45%" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Am1n1602&theme=tokyonight&no-frame=false&no-bg=true&margin-w=4" alt="GitHub Trophies" />
-</p>
-
----
-
-### 🌐 Connect
-
-<p align="left">
-  <a href="https://github.com/Am1n1602" target="_blank"><img src="https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/am1n-gautam/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> 
-   <a href="mailto:amangautam1602@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <i>Build. Break. Learn. Repeat.</i>
 </p>
