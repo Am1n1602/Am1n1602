@@ -2,11 +2,11 @@
 
 ### C++ Developer • ML/AI Enthusiast • IIT (BHU)
 
-I like building things and understanding how they work under the hood — from **C++ game systems and simulations** to **financial data pipelines, machine learning, and RAG-based applications**.
+I like building things and understanding how they work under the hood from **C++ game systems and simulations** to **financial data pipelines, machine learning, and RAG-based applications**.
 
-* 🎓 Student at **IIT (BHU), Varanasi**
-* 💻 Strongest in **C++ and Python**
-* 🎮 Interested in **game development, graphics, physics, and systems programming**
+* 🎓 Pre-Final Year Student at **IIT (BHU), Varanasi**
+* 💻 Comfortable working in **C++, Python and Rust**
+* 🎮 Interested in **game development, fintech, graphics and systems programming**
 * 🤖 Exploring **machine learning, deep learning, and LLM applications**
 * 📊 Currently building software around **financial data and analysis**
 
@@ -19,7 +19,7 @@ I like building things and understanding how they work under the hood — from *
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square\&logo=cplusplus\&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=flat-square\&logo=c\&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square\&logo=csharp\&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square\&logo=kotlin\&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square\&logo=javascript\&logoColor=black)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square\&logo=mysql\&logoColor=white)
