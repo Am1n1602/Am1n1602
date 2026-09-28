@@ -1,166 +1,74 @@
-# Hi, I'm Aman Gautam 👋
+# Aman Gautam
 
-### C++ Developer • ML/AI Enthusiast • IIT (BHU)
+Pre-final year student (Integrated Dual Degree) at IIT (BHU) Varanasi. I build data infrastructure and analysis tools for Indian equity markets, mostly in Rust and Python, and write C++ game and simulation code on the side.
 
-I like building things and understanding how they work under the hood from **C++ game systems and simulations** to **financial data pipelines, machine learning, and RAG-based applications**.
-
-* 🎓 Pre-Final Year Student at **IIT (BHU), Varanasi**
-* 💻 Comfortable working in **C++, Python and Rust**
-* 🎮 Interested in **game development, fintech, graphics and systems programming**
-* 🤖 Exploring **machine learning, deep learning, and LLM applications**
-* 📊 Currently building software around **financial data and analysis**
+Much of my recent work starts from the same problem: NSE and BSE publish a great deal of useful data, but through undocumented endpoints, inconsistent XBRL tagging, and formats that change without notice. I try to get that layer right first then verified against live behaviour, explicit about what it doesn't know before building analysis on top of it.
 
 ---
 
-## 🛠️ Tech Stack
+## Selected work
 
-### Languages
+### [jugaad-rs](https://github.com/Am1n1602/jugaad-rs) — NSE market data library and CLI in Rust
 
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square\&logo=cplusplus\&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square\&logo=c\&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square\&logo=kotlin\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square\&logo=javascript\&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square\&logo=mysql\&logoColor=white)
+`Rust` `tokio` `tonic / gRPC` `Docker` `polars`
 
-### Development
+An idiomatic Rust rewrite of the Python [`jugaad-data`](https://github.com/jugaad-py/jugaad-data) library, structured as a Cargo workspace:
 
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square\&logo=linux\&logoColor=black)
-![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square\&logo=cmake\&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square\&logo=nodedotjs\&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square\&logo=express\&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square\&logo=mongodb\&logoColor=white)
+- **`jugaad-core`** — async client library covering historical and live data: whole-market and F&O bhavcopy, stock / index / derivatives history, live quotes with order-book depth, option chains, market movers, corporate announcements, and financial-results filings with XBRL download.
+- **`jugaad`** — a 47-command CLI that writes clean CSV for every endpoint.
+- **`jugaad-rpc`** — a gRPC server exposing the core library to non-Rust clients, published as a container image on GHCR, with working Python and Node.js example clients.
 
-### Game Development
+Design points:
 
-![Raylib](https://img.shields.io/badge/Raylib-000000?style=flat-square)
-![Godot](https://img.shields.io/badge/Godot-478CBF?style=flat-square\&logo=godotengine\&logoColor=white)
-![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?style=flat-square\&logo=opengl\&logoColor=white)
-![SDL2](https://img.shields.io/badge/SDL2-000000?style=flat-square)
+- NSE has no public API documentation, so every endpoint was verified against live responses, including a retest during market hours. Undocumented behaviour is recorded in [`docs/nse-findings.md`](https://github.com/Am1n1602/jugaad-rs/blob/main/docs/nse-findings.md) rather than inferred from the Python source.
+- Bhavcopy calls transparently handle NSE's July 2024 format change, so callers never need to know which side of it a date falls on.
+- Network layer with connect and request timeouts and exponential backoff with jitter on transient failures; bot-protection 403s surface as a distinct error and are deliberately not retried.
+- Typed error model that distinguishes "not found", "no data published yet" and "blocked" instead of collapsing them into one failure.
+- Optional `polars` DataFrame conversion behind a feature flag; prebuilt binaries for Linux, macOS (Intel and Apple Silicon) and Windows on every release.
 
-### Data / ML / AI
+### [Fin_QA](https://github.com/Am1n1602/Fin_QA) — question answering over Indian company filings
 
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square\&logo=numpy\&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square\&logo=pandas\&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square\&logo=scikitlearn\&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square\&logo=pytorch\&logoColor=white)
-![LightGBM](https://img.shields.io/badge/LightGBM-9ACD32?style=flat-square)
+`Python` `SQLite` `FAISS` `sentence-transformers` `Ollama / Groq` `FastAPI` `React`
 
-**AI / Finance:** `RAG` · `LLM Applications` · `XBRL` · `Financial Analysis` · `Vector Search`
+A local-first system that turns raw NSE/BSE regulatory filings into answers to questions such as *"Compare AXISBANK and HDFCBANK on leverage"* or *"Why did HCLTECH's profitability decline?"*, across the live NIFTY 50 universe.
 
----
+- **Numbers never come from the LLM.** A deterministic engine computes every ratio, trend, peer percentile, composite ranking score, Piotroski F-Score and partial Altman Z''. The language model only writes up figures that have already been computed, and each numeric claim it makes is checked against source values and units before it is shown.
+- **Routing by question type.** Factual, trend and ranking questions resolve to structured database queries with no LLM involved. Narrative questions go through hybrid retrieval over filing PDFs (dense embeddings + BM25 + phrase overlap, cross-encoder reranking).
+- **No silent approximation.** XBRL facts that can't be mapped cleanly to the canonical schema are stored as null with a recorded reason — never zero-filled or proxied.
+- Computed figures for TCS were cross-checked against independent sources (GuruFocus, Value Research, Tickertape).
+- Ships as a pip-installable CLI with OS-level scheduled data refresh. A FastAPI backend and React dashboard are in progress.
 
-## 🚀 Featured Projects
+### Games and simulation
 
-### 📈 [Fin_QA](https://github.com/Am1n1602/Fin_QA)
-
-**Python • RAG • LLM • Financial Analysis**
-
-A financial question-answering system focused on Indian equities.
-
-* Deterministic financial ratio engine for company analysis
-* RAG pipeline for answering questions using financial information
-* Supports **NSE/BSE companies**
-* Exposed through **CLI, API, and dashboard**
-* Combines structured financial computation with LLM-based reasoning
-
-> Building toward a broader financial intelligence platform for fundamental analysis, financial QA, and automated research.
+| Project | Description |
+| --- | --- |
+| [Just Another Easy Game](https://github.com/Am1n1602/Just-another-easy-game) | 2D platformer in C++17 and raylib, built without an engine: movement and collision, traps, level design, game-state management and audio. Playable in the browser on [itch.io](https://peepow.itch.io/just-another-easy-game), with an online leaderboard served by Node.js / Express and MongoDB. |
+| [ParticleCollision](https://github.com/Am1n1602/ParticleCollision) | Interactive 2D simulation of charged particles with attraction and repulsion, elastic collisions, and a live centre-of-mass readout. |
+| [FP-Movement](https://github.com/Am1n1602/FP-Movement) | First-person camera and movement controller in raylib. |
+| [Just-Another-World-Godot](https://github.com/Am1n1602/Just-Another-World-Godot) | A 2D project in Godot with a web export, used to compare an engine-based workflow against writing the systems by hand. |
 
 ---
 
-### 🎮 [Just-Another-World-Godot](https://github.com/Am1n1602/Just-Another-World-Godot)
+## Technical skills
 
-**Godot • GDScript • Game Development**
+| | |
+| --- | --- |
+| **Languages** | Rust, C++, Python, C, Kotlin, JavaScript, SQL |
+| **Systems and backend** | tokio, tonic / gRPC, FastAPI, Node.js / Express, Docker, SQLite, MongoDB |
+| **Data and ML** | pandas, polars, NumPy, scikit-learn, LightGBM, PyTorch |
+| **Retrieval and LLMs** | FAISS, sentence-transformers, BM25, cross-encoder reranking, Ollama, Groq, Anthropic API |
+| **Graphics and games** | raylib, Godot, OpenGL, SDL2 |
+| **Tooling** | Git, CMake, Cargo, GitHub Actions, Linux |
 
-A game-development project exploring the **Godot engine** and modern 2D game workflows.
+## Interests
 
-* Experimenting with gameplay systems and scene architecture
-* Working with Godot's node-based design
-* Exploring a development workflow beyond my C++ / Raylib projects
-
----
-
-### 🕹️ [Just-another-easy-game](https://github.com/Am1n1602/Just-another-easy-game)
-
-**C++ • Raylib • Node.js • MongoDB**
-
-A 2D platformer built from scratch using Raylib.
-
-* Built in **C++ without a traditional game engine**
-* Includes player movement, physics, traps, level design and gameplay systems
-* Published as a playable browser game
-* Includes an online leaderboard backed by a Node.js server and MongoDB
-
-🎮 **[Play the game](https://peepow.itch.io/just-another-easy-game)**
+- **Financial data engineering** — filings, XBRL, exchange data, and reliable pipelines over sources that were never designed to be consumed programmatically.
+- **Machine learning** — currently studying deep learning, with an eye to applying it to financial time series and documents.
+- **Systems programming** — performance-oriented Rust and C++, and understanding what the code actually does at runtime.
+- **Game engines and graphics** — physics, rendering, and how engine architecture is put together.
 
 ---
 
-### ⚛️ [ParticleCollision](https://github.com/Am1n1602/ParticleCollision)
+## Contact
 
-**C++ • Raylib • Physics Simulation**
-
-A real-time particle collision simulation built to explore **physics programming and interactive simulation**.
-
-* Particle interaction and collision handling
-* Real-time visualization with Raylib
-* Focused on understanding simulation and game-physics fundamentals
-
----
-
-## 🔨 Currently Exploring
-
-```text
-Financial Data      → XBRL → JSON → Analysis → Financial QA
-AI / LLM            → RAG → Retrieval → Grounded Answers
-Machine Learning    → ML → Deep Learning → Applied AI
-Game Development    → Physics → Graphics → Engine Architecture
-Systems Programming → C++ → Performance → Low-level Concepts
-```
-
----
-
-## 💡 What I Enjoy Building
-
-**Systems & Software Engineering**
-Backend systems, APIs, performance-oriented C++, and understanding software at a lower level.
-
-**Game Development**
-Graphics, physics, movement systems, simulations, and game-engine architecture.
-
-**AI & Data**
-Machine learning, financial data analysis, RAG systems, and practical LLM applications.
-
----
-
-## 📊 GitHub
-
-<p align="center">
-  <img
-    src="https://github-stats-extended.vercel.app/api?username=Am1n1602&show_icons=true&theme=radical&hide_border=true"
-    height="170"
-    alt="Aman's GitHub Stats"
-  />
-  <img
-    src="https://github-stats-extended.vercel.app/api/top-langs/?username=Am1n1602&layout=compact&langs_count=8&theme=radical&hide_border=true"
-    height="170"
-    alt="Aman's Top Languages"
-  />
-</p>
-
----
-
-## 🤝 Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aman%20Gautam-0A66C2?style=flat-square\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/am1n-gautam/)
-[![X](https://img.shields.io/badge/X-@Am1n1602-000000?style=flat-square\&logo=x\&logoColor=white)](https://x.com/Am1n1602)
-[![Itch.io](https://img.shields.io/badge/Itch.io-My%20Game-FA5C5C?style=flat-square\&logo=itchdotio\&logoColor=white)](https://peepow.itch.io/just-another-easy-game)
-
-📧 **[amangautam1602@gmail.com](mailto:amangautam1602@gmail.com)**
-
----
-
-<p align="center">
-  <i>Build. Break. Learn. Repeat.</i>
-</p>
+[amangautam1602@gmail.com](mailto:amangautam1602@gmail.com) · [LinkedIn](https://www.linkedin.com/in/am1n-gautam/) · [X](https://x.com/Am1n1602) · [itch.io](https://peepow.itch.io/just-another-easy-game)
