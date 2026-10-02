@@ -1,6 +1,6 @@
 # Aman Gautam
 
-Pre-final year student (Integrated Dual Degree) at IIT (BHU) Varanasi. I build data infrastructure and analysis tools for Indian equity markets, mostly in Rust and Python, and write C++ game and simulation code on the side.
+Pre-final year student (Integrated Dual Degree) at IIT (BHU) Varanasi. I build data infrastructure and analysis tools for anything i like for example indian stock market, mostly in Rust and Python, and write C++ game and simulation code as a hobby (Wants to create a 2d rpg game in the future).
 
 Much of my recent work starts from the same problem: NSE and BSE publish a great deal of useful data, but through undocumented endpoints, inconsistent XBRL tagging, and formats that change without notice. I try to get that layer right first then verified against live behaviour, explicit about what it doesn't know before building analysis on top of it.
 
