@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=Am1n1602&label=Profile%20views&color=0e75b6&style=flat-square">
+  <!-- <img alt="Profile views" src="https://komarev.com/ghpvc/?username=Am1n1602&label=Profile%20views&color=0e75b6&style=flat-square"> -->
   <img alt="GitHub followers" src="https://img.shields.io/github/followers/Am1n1602?style=flat-square&logo=github&label=Followers">
 </p>
 
